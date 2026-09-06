@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Runs the Minecraft-independent checks for the Nika/Gear 5 core.
 #
-# These cover the pure math and the ability-routing rules: elastic timing curves,
-# volume-preserving squash/stretch, damped ripples, swept (between-tick) collision,
-# and the invariant that one key can never fire two fruit techniques.
+# These cover the pure math, the ability-routing rules and the authored poses: elastic
+# timing curves, volume-preserving squash/stretch, damped ripples, swept (between-tick)
+# collision, the invariant that one key can never fire two fruit techniques, and the
+# joint-integrity of every player_animation file.
 #
-# They need only a JDK - no Forge, no Minecraft, no Gradle - so they run anywhere:
+# They need only a JDK and Python 3 - no Forge, no Minecraft, no Gradle - so they run
+# anywhere:
 #   ./tools/checks/run.sh
 set -euo pipefail
 cd "$(dirname "$0")/../.."
@@ -27,4 +29,8 @@ for check in SlotCheck CurveCheck SweepCheck; do
   java -cp "$OUT" "$check" || status=1
   echo
 done
+
+echo "=== player animations ==="
+python3 tools/checks/validate_animations.py || status=1
+
 exit $status
