@@ -1,0 +1,206 @@
+{
+  "version": 3,
+  "name": "galaxy_ready",
+  "author": "HexHaki V2",
+  "description": "Full Galaxy Impact ground hold: upper-body-only Garp-style laugh. Head tips back, chest opens and shoulders bounce with the laugh while vanilla locomotion owns both legs. Reaching full charge transitions directly into the existing leap.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 24,
+    "isLoop": true,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "torso": {
+          "pitch": -5,
+          "yaw": -3,
+          "roll": 0,
+          "bend": -4
+        },
+        "head": {
+          "pitch": -18,
+          "yaw": 2,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": 8,
+          "yaw": -8,
+          "roll": 10,
+          "bend": -16
+        },
+        "leftArm": {
+          "pitch": 10,
+          "yaw": 8,
+          "roll": -10,
+          "bend": -16
+        }
+      },
+      {
+        "tick": 4,
+        "easing": "outcubic",
+        "torso": {
+          "pitch": -14,
+          "yaw": 3,
+          "roll": 1,
+          "bend": -12
+        },
+        "head": {
+          "pitch": -31,
+          "yaw": -3,
+          "roll": 3
+        },
+        "rightArm": {
+          "pitch": -4,
+          "yaw": -14,
+          "roll": 18,
+          "bend": -26
+        },
+        "leftArm": {
+          "pitch": -2,
+          "yaw": 14,
+          "roll": -18,
+          "bend": -26
+        }
+      },
+      {
+        "tick": 8,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": -3,
+          "yaw": -2,
+          "roll": -1,
+          "bend": -3
+        },
+        "head": {
+          "pitch": -15,
+          "yaw": 3,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": 12,
+          "yaw": -7,
+          "roll": 9,
+          "bend": -14
+        },
+        "leftArm": {
+          "pitch": 14,
+          "yaw": 7,
+          "roll": -9,
+          "bend": -14
+        }
+      },
+      {
+        "tick": 12,
+        "easing": "outcubic",
+        "torso": {
+          "pitch": -16,
+          "yaw": 4,
+          "roll": 1,
+          "bend": -14
+        },
+        "head": {
+          "pitch": -34,
+          "yaw": -4,
+          "roll": 3
+        },
+        "rightArm": {
+          "pitch": -6,
+          "yaw": -15,
+          "roll": 20,
+          "bend": -28
+        },
+        "leftArm": {
+          "pitch": -4,
+          "yaw": 15,
+          "roll": -20,
+          "bend": -28
+        }
+      },
+      {
+        "tick": 16,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": -4,
+          "yaw": -3,
+          "roll": 0,
+          "bend": -4
+        },
+        "head": {
+          "pitch": -17,
+          "yaw": 3,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": 10,
+          "yaw": -8,
+          "roll": 11,
+          "bend": -16
+        },
+        "leftArm": {
+          "pitch": 12,
+          "yaw": 8,
+          "roll": -11,
+          "bend": -16
+        }
+      },
+      {
+        "tick": 20,
+        "easing": "outcubic",
+        "torso": {
+          "pitch": -13,
+          "yaw": 3,
+          "roll": -1,
+          "bend": -11
+        },
+        "head": {
+          "pitch": -29,
+          "yaw": -2,
+          "roll": 2
+        },
+        "rightArm": {
+          "pitch": -2,
+          "yaw": -13,
+          "roll": 17,
+          "bend": -24
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 13,
+          "roll": -17,
+          "bend": -24
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": -5,
+          "yaw": -3,
+          "roll": 0,
+          "bend": -4
+        },
+        "head": {
+          "pitch": -18,
+          "yaw": 2,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": 8,
+          "yaw": -8,
+          "roll": 10,
+          "bend": -16
+        },
+        "leftArm": {
+          "pitch": 10,
+          "yaw": 8,
+          "roll": -10,
+          "bend": -16
+        }
+      }
+    ]
+  }
+}

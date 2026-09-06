@@ -1,0 +1,14 @@
+.gradle/
+build/
+run/
+out/
+.idea/
+*.iml
+*.ipr
+*.iws
+eclipse/
+bin/
+
+
+# Local API-verification jars (resolved from CurseForge at build time)
+libs/

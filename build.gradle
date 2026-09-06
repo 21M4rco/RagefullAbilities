@@ -1,0 +1,165 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
+}
+
+group = mod_group_id
+version = mod_version
+base { archivesName = mod_id }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: minecraft_version
+    copyIdeResources = true
+    runs {
+        configureEach {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'info'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            mods { "${mod_id}" { source sourceSets.main } }
+        }
+        client {}
+        server { args '--nogui' }
+    }
+}
+
+repositories {
+    // Immutable CurseForge file coordinates keep every checkout reproducible.
+    // transitive=false is deliberate: Photon/LDLib publish optional editor and
+    // renderer integrations that are not required by this mod's runtime API.
+    maven {
+        url = 'https://cursemaven.com/'
+        content { includeGroup 'curse.maven' }
+    }
+    maven { url = 'https://jitpack.io' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    // Photon 1.1.17+ and LDLib 1.0.42+, Forge 1.20.1.
+    implementation(fg.deobf("curse.maven:photon-871522:7501597")) {
+        transitive = false
+    }
+    implementation(fg.deobf("curse.maven:ldlib-626676:6849454")) {
+        transitive = false
+    }
+
+    // Player Animator 1.0.2-rc1+1.20 (the official player_animation JSON runtime).
+    implementation(fg.deobf("curse.maven:playeranimator-658587:4587214")) {
+        transitive = false
+    }
+
+    // BendyLib 4.0.0 supplies mid-limb bending (elbows, knees and torso flexion).
+    // Player Animator detects it automatically and applies the `bend` channels in our JSON.
+    implementation(fg.deobf("curse.maven:bendy-lib-623373:4550371")) {
+        transitive = false
+    }
+
+    // GeckoLib 4.8.4 is declared for compatible animation-resource tooling and
+    // future Haki-only model layers. Player poses themselves use Player Animator.
+    implementation(fg.deobf("curse.maven:geckolib-388172:8285794")) {
+        transitive = false
+    }
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly annotationProcessor('io.github.llamalad7:mixinextras-common:0.5.0')
+    implementation('io.github.llamalad7:mixinextras-forge:0.5.0') {
+        transitive = false
+    }
+}
+
+mixin {
+    add sourceSets.main, "${mod_id}.refmap.json"
+    config "${mod_id}.mixins.json"
+}
+
+def replaceProperties = [
+        minecraft_version: minecraft_version,
+        forge_version: forge_version,
+        mod_id: mod_id,
+        mod_name: mod_name,
+        mod_version: mod_version,
+        player_anim_version: player_anim_version,
+        bendylib_version: bendylib_version,
+        geckolib_version: geckolib_version,
+        photon_version: photon_version,
+        ldlib_version: ldlib_version
+]
+
+processResources {
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/mods.toml']) { expand replaceProperties }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+tasks.register('validateHakiResources') {
+    group = 'verification'
+    description = 'Rejects missing Haki VFX handlers, animation JSON, sounds, or textures before compilation.'
+    doLast {
+        def root = file('src/main/resources/assets/hexhaki')
+        def javaRoot = file('src/main/java/com/hexhaki')
+        def visualPacket = file("${javaRoot}/network/msg/S2CHakiVisual.java").text
+        def renderer = file("${javaRoot}/client/vfx/HakiVfx.java").text
+        def visualsBody = (visualPacket =~ /enum Visual\s*\{([\s\S]*?)\}/)
+        if (!visualsBody.find()) throw new GradleException('Cannot read the Haki visual protocol enum')
+        def visuals = visualsBody.group(1).replaceAll(/\/\/.*$/, '').split(',')*.trim().findAll { it ==~ /[A-Z0-9_]+/ }
+        def unhandled = visuals.findAll { !renderer.contains("case ${it}") }
+        if (!unhandled.empty) throw new GradleException("Photon renderer is missing protocol cases: ${unhandled.join(', ')}")
+
+        def soundJson = new groovy.json.JsonSlurper().parse(file("${root}/sounds.json"))
+        soundJson.each { id, definition ->
+            definition.sounds.each { entry ->
+                def name = entry instanceof Map ? entry.name : entry
+                def relative = name.toString().replace('hexhaki:', '')
+                if (!file("${root}/sounds/${relative}.ogg").isFile()) throw new GradleException("Missing sound asset: ${relative}.ogg")
+            }
+        }
+
+        def requestedAnimations = [] as Set
+        def controller = file("${javaRoot}/gameplay/HakiServerController.java").text
+        (controller =~ /animate\([^;\n]+\)/).findAll().each { call ->
+            (call =~ /"([a-z0-9_]+)"/).each { match -> requestedAnimations.add(match[1]) }
+        }
+        (controller =~ /String\s+\w*(?:Pose|Animation)\s*=\s*([^;]+)/).each { assignment ->
+            (assignment[1] =~ /"([a-z0-9_]+)"/).each { match -> requestedAnimations.add(match[1]) }
+        }
+        requestedAnimations.remove('__clear__')
+        requestedAnimations.each { animation ->
+            if (!file("${root}/player_animation/${animation}.json").isFile()) throw new GradleException("Missing player animation: ${animation}.json")
+        }
+        fileTree("${root}/player_animation").matching { include '*.json' }.files.each { animationFile ->
+            def animationText = animationFile.getText('UTF-8')
+            if (!animationText.contains('"bend"')) throw new GradleException("BendyLib channel missing from animation: ${animationFile.name}")
+            new groovy.json.JsonSlurper().parse(animationFile)
+        }
+        ['soft.png', 'spark.png', 'beam.png', 'coating.png'].each { texture ->
+            if (!file("${root}/textures/effect/${texture}").isFile()) throw new GradleException("Missing Photon texture: ${texture}")
+        }
+    }
+}
+
+check.dependsOn tasks.named('validateHakiResources')
+
+jar {
+    manifest {
+        attributes([
+                'Specification-Title': mod_id,
+                'Specification-Vendor': 'HexHaki',
+                'Specification-Version': '1',
+                'Implementation-Title': project.name,
+                'Implementation-Version': project.jar.archiveVersion,
+                'Implementation-Vendor': 'HexHaki',
+                'MixinConfigs': "${mod_id}.mixins.json"
+        ])
+    }
+    finalizedBy 'reobfJar'
+}

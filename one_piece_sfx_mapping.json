@@ -1,0 +1,183 @@
+{
+  "armament_on.ogg": {
+    "source": "Armament Haki (Busoshoku Haki ) v1.mp3",
+    "start": 0.55,
+    "duration": 2.1
+  },
+  "armament_off.ogg": {
+    "source": "change take v2.mp3",
+    "start": 0.0,
+    "duration": 1.55
+  },
+  "armament_crackle_1.ogg": {
+    "source": "conqueror's Haki (Haoshoku Haki) v1.mp3",
+    "start": 4.22,
+    "duration": 0.62
+  },
+  "armament_crackle_2.ogg": {
+    "source": "conqueror's Haki (Haoshoku Haki) v1.mp3",
+    "start": 11.18,
+    "duration": 0.62
+  },
+  "armament_crackle_3.ogg": {
+    "source": "conqueror's haki (Haoshoku Haki) v2.mp3",
+    "start": 3.5,
+    "duration": 0.66
+  },
+  "observation_on.ogg": {
+    "source": "Observation Haki (Kenbunshoku Haki).mp3",
+    "start": 0.45,
+    "duration": 3.0
+  },
+  "observation_off.ogg": {
+    "source": "Flashback v4.mp3",
+    "start": 0.0,
+    "duration": 1.45
+  },
+  "observation_danger.ogg": {
+    "source": "Alert sound.mp3",
+    "start": 0.0,
+    "duration": 1.85
+  },
+  "ryo_charge.ogg": {
+    "source": "Power.mp3",
+    "start": 0.45,
+    "duration": 2.45
+  },
+  "ryo_release.ogg": {
+    "source": "great clash of sword (with expansive wave).mp3",
+    "start": 0.0,
+    "duration": 2.95
+  },
+  "internal_hit.ogg": {
+    "source": "impact dial.mp3",
+    "start": 0.1,
+    "duration": 2.1
+  },
+  "future_charge.ogg": {
+    "source": "Observation Haki (Kenbunshoku Haki).mp3",
+    "start": 9.35,
+    "duration": 2.75
+  },
+  "future_activate.ogg": {
+    "source": "Out of nowhere v3.mp3",
+    "start": 0.0,
+    "duration": 0.84
+  },
+  "conqueror_charge.ogg": {
+    "source": "conqueror's Haki (Haoshoku Haki) v1.mp3",
+    "start": 1.05,
+    "duration": 1.85
+  },
+  "conqueror_release_1.ogg": {
+    "source": "conqueror's Haki (Haoshoku Haki) v1.mp3",
+    "start": 4.05,
+    "duration": 2.55
+  },
+  "conqueror_release_2.ogg": {
+    "source": "conqueror's haki (Haoshoku Haki) v2.mp3",
+    "start": 3.15,
+    "duration": 2.6
+  },
+  "mode_cycle.ogg": {
+    "source": "change take v1.mp3",
+    "start": 0.25,
+    "duration": 1.35
+  },
+  "acoc_on.ogg": {
+    "source": "great clash of sword v2.mp3",
+    "start": 0.0,
+    "duration": 2.95
+  },
+  "acoc_off.ogg": {
+    "source": "Luffy's arm return v1.mp3",
+    "start": 0.0,
+    "duration": 1.75
+  },
+  "dominion_on.ogg": {
+    "source": "Terror.mp3",
+    "start": 4.8,
+    "duration": 3.05
+  },
+  "dominion_off.ogg": {
+    "source": "terror v2.mp3",
+    "start": 0.25,
+    "duration": 2.05
+  },
+  "sovereign_strike.ogg": {
+    "source": "great clash of sword.mp3",
+    "start": 0.0,
+    "duration": 2.1
+  },
+  "convergence_charge.ogg": {
+    "source": "room (Trafalgar Law).mp3",
+    "start": 0.2,
+    "duration": 3.0
+  },
+  "convergence_release.ogg": {
+    "source": "Magic whoosh.mp3",
+    "start": 0.0,
+    "duration": 1.95
+  },
+  "convergence_hit.ogg": {
+    "source": "big punch.mp3",
+    "start": 0.0,
+    "duration": 2.6
+  },
+  "conqueror_supreme_blast.ogg": {
+    "source": "Big explosion.mp3",
+    "start": 0.0,
+    "duration": 4.6
+  },
+  "conqueror_supreme_rumble.ogg": {
+    "source": "Ursus shock.mp3",
+    "start": 4.55,
+    "duration": 3.9
+  },
+  "conqueror_supreme_snap.ogg": {
+    "source": "Clashes of swords (3 hits).mp3",
+    "start": 0.02,
+    "duration": 0.78
+  },
+  "galaxy_rage_charge.ogg": {
+    "source": "gear second v1.mp3",
+    "start": 0.15,
+    "duration": 3.55
+  },
+  "galaxy_rage_absorb.ogg": {
+    "source": "room (Trafalgar Law).mp3",
+    "start": 3.1,
+    "duration": 2.95
+  },
+  "galaxy_wave_punch.ogg": {
+    "source": "user-supplied serious punch SFX",
+    "start": 0.0,
+    "duration": 1.37,
+    "processing": "mono 48 kHz, approximately 50% volume"
+  },
+  "galaxy_rage_punch.ogg": {
+    "source": "fist.mp3",
+    "start": 0.0,
+    "duration": 1.38
+  },
+  "galaxy_rage_impact.ogg": {
+    "source": "explosion with debris.mp3",
+    "start": 0.0,
+    "duration": 5.15
+  },
+  "galaxy_rage_crack1.ogg": {
+    "source": "Clashes of swords (3 hits).mp3",
+    "start": 1.28,
+    "duration": 0.72
+  },
+  "galaxy_rage_crack2.ogg": {
+    "source": "Clashes of swords (3 hits).mp3",
+    "start": 3.43,
+    "duration": 0.72
+  },
+  "galaxy_rage_crack3.ogg": {
+    "source": "Clashes of swords (3 hits).mp3",
+    "start": 4.3,
+    "duration": 0.72
+  }
+}

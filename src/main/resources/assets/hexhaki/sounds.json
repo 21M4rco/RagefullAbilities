@@ -1,0 +1,216 @@
+{
+  "armament_on": {
+    "subtitle": "subtitles.hexhaki.armament_on",
+    "sounds": [
+      "hexhaki:armament_on"
+    ]
+  },
+  "armament_off": {
+    "subtitle": "subtitles.hexhaki.armament_off",
+    "sounds": [
+      "hexhaki:armament_off"
+    ]
+  },
+  "armament_crackle": {
+    "subtitle": "subtitles.hexhaki.armament_crackle",
+    "sounds": [
+      "hexhaki:armament_crackle"
+    ]
+  },
+  "armament_ambient_zap": {
+    "subtitle": "subtitles.hexhaki.armament_crackle",
+    "sounds": [
+      "hexhaki:armament_ambient_zap_1",
+      "hexhaki:armament_ambient_zap_2",
+      "hexhaki:armament_ambient_zap_3"
+    ]
+  },
+  "haki_punch": {
+    "subtitle": "subtitles.hexhaki.haki_punch",
+    "sounds": [
+      "hexhaki:haki_punch"
+    ]
+  },
+  "observation_on": {
+    "subtitle": "subtitles.hexhaki.observation_on",
+    "sounds": [
+      "hexhaki:observation_on"
+    ]
+  },
+  "observation_off": {
+    "subtitle": "subtitles.hexhaki.observation_off",
+    "sounds": [
+      "hexhaki:observation_off"
+    ]
+  },
+  "observation_danger": {
+    "subtitle": "subtitles.hexhaki.observation_danger",
+    "sounds": [
+      "hexhaki:observation_danger"
+    ]
+  },
+  "ryo_charge": {
+    "subtitle": "subtitles.hexhaki.ryo_charge",
+    "sounds": [
+      "hexhaki:ryo_charge"
+    ]
+  },
+  "ryo_release": {
+    "subtitle": "subtitles.hexhaki.ryo_release",
+    "sounds": [
+      "hexhaki:ryo_release"
+    ]
+  },
+  "internal_hit": {
+    "subtitle": "subtitles.hexhaki.internal_hit",
+    "sounds": [
+      "hexhaki:internal_hit"
+    ]
+  },
+  "conqueror_charge": {
+    "subtitle": "subtitles.hexhaki.conqueror_charge",
+    "sounds": [
+      "hexhaki:conqueror_charge"
+    ]
+  },
+  "conqueror_release": {
+    "subtitle": "subtitles.hexhaki.conqueror_release",
+    "sounds": [
+      "hexhaki:conqueror_release"
+    ]
+  },
+  "mode_cycle": {
+    "subtitle": "subtitles.hexhaki.mode_cycle",
+    "sounds": [
+      "hexhaki:mode_cycle"
+    ]
+  },
+  "acoc_on": {
+    "subtitle": "subtitles.hexhaki.acoc_on",
+    "sounds": [
+      "hexhaki:acoc_on"
+    ]
+  },
+  "acoc_off": {
+    "subtitle": "subtitles.hexhaki.acoc_off",
+    "sounds": [
+      "hexhaki:acoc_off"
+    ]
+  },
+  "dominion_on": {
+    "subtitle": "subtitles.hexhaki.dominion_on",
+    "sounds": [
+      "hexhaki:dominion_on"
+    ]
+  },
+  "dominion_off": {
+    "subtitle": "subtitles.hexhaki.dominion_off",
+    "sounds": [
+      "hexhaki:dominion_off"
+    ]
+  },
+  "sovereign_strike": {
+    "subtitle": "subtitles.hexhaki.sovereign_strike",
+    "sounds": [
+      "hexhaki:sovereign_strike"
+    ]
+  },
+  "convergence_charge": {
+    "subtitle": "subtitles.hexhaki.convergence_charge",
+    "sounds": [
+      "hexhaki:convergence_charge"
+    ]
+  },
+  "convergence_release": {
+    "subtitle": "subtitles.hexhaki.convergence_release",
+    "sounds": [
+      "hexhaki:convergence_release"
+    ]
+  },
+  "convergence_hit": {
+    "subtitle": "subtitles.hexhaki.convergence_hit",
+    "sounds": [
+      "hexhaki:convergence_hit"
+    ]
+  },
+  "conqueror_supreme_blast": {
+    "subtitle": "subtitles.hexhaki.conqueror_supreme_blast",
+    "sounds": [
+      "hexhaki:conqueror_supreme_blast"
+    ]
+  },
+  "conqueror_supreme_rumble": {
+    "subtitle": "subtitles.hexhaki.conqueror_supreme_rumble",
+    "sounds": [
+      "hexhaki:conqueror_supreme_rumble"
+    ]
+  },
+  "conqueror_supreme_snap": {
+    "subtitle": "subtitles.hexhaki.conqueror_supreme_snap",
+    "sounds": [
+      "hexhaki:conqueror_supreme_snap"
+    ]
+  },
+  "last_stand_lightning": {
+    "subtitle": "subtitles.hexhaki.last_stand_lightning",
+    "sounds": [
+      "hexhaki:last_stand_lightning_1",
+      "hexhaki:last_stand_lightning_2",
+      "hexhaki:last_stand_lightning_3"
+    ]
+  },
+  "galaxy_rage_charge": {
+    "subtitle": "subtitles.hexhaki.galaxy_rage_charge",
+    "sounds": [
+      "hexhaki:galaxy_rage_charge"
+    ]
+  },
+  "galaxy_rage_absorb": {
+    "subtitle": "subtitles.hexhaki.galaxy_rage_absorb",
+    "sounds": [
+      "hexhaki:galaxy_rage_absorb"
+    ]
+  },
+  "galaxy_wave_punch": {
+    "subtitle": "subtitles.hexhaki.galaxy_wave_punch",
+    "sounds": [
+      "hexhaki:galaxy_wave_punch"
+    ]
+  },
+  "galaxy_rage_punch": {
+    "subtitle": "subtitles.hexhaki.galaxy_rage_punch",
+    "sounds": [
+      "hexhaki:galaxy_rage_punch"
+    ]
+  },
+  "galaxy_rage_impact": {
+    "subtitle": "subtitles.hexhaki.galaxy_rage_impact",
+    "sounds": [
+      "hexhaki:galaxy_rage_impact"
+    ]
+  },
+  "galaxy_rage_crack": {
+    "subtitle": "subtitles.hexhaki.galaxy_rage_crack",
+    "sounds": [
+      "hexhaki:galaxy_rage_crack"
+    ]
+  },
+  "wifi_haki_start": {
+    "subtitle": "subtitles.hexhaki.wifi_haki_start",
+    "sounds": [
+      "hexhaki:wifi_haki_start"
+    ]
+  },
+  "wifi_haki_pulse": {
+    "subtitle": "subtitles.hexhaki.wifi_haki_pulse",
+    "sounds": [
+      "hexhaki:wifi_haki_pulse"
+    ]
+  },
+  "wifi_haki_end": {
+    "subtitle": "subtitles.hexhaki.wifi_haki_end",
+    "sounds": [
+      "hexhaki:wifi_haki_end"
+    ]
+  }
+}

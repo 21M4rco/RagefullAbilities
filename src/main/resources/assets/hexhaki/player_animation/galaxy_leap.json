@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "uuid": "cc2fd27b-6576-4d68-9dc2-1a9f7c8ddf01",
+  "name": "galaxy_leap",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 28,
+    "stopTick": 31,
+    "isLoop": false,
+    "returnTick": 0,
+    "nsfw": false,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "torso": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": 0,
+          "roll": 0,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 3,
+        "easing": "INQUAD",
+        "head": {
+          "pitch": 10
+        },
+        "torso": {
+          "pitch": 20,
+          "yaw": -3,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": 30,
+          "yaw": -8,
+          "roll": -24,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 30,
+          "yaw": 8,
+          "roll": 24,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": -34,
+          "roll": -8,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": -30,
+          "roll": 8,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 6,
+        "easing": "INOUTQUAD",
+        "head": {
+          "pitch": 14
+        },
+        "torso": {
+          "pitch": 29,
+          "yaw": -6,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": 42,
+          "yaw": -14,
+          "roll": -42,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 38,
+          "yaw": 14,
+          "roll": 42,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": -46,
+          "roll": -12,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": -42,
+          "roll": 12,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 8,
+        "easing": "OUTEXPO",
+        "head": {
+          "pitch": -12
+        },
+        "torso": {
+          "pitch": -18,
+          "yaw": 6,
+          "roll": -2,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -34,
+          "yaw": -18,
+          "roll": -112,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -30,
+          "yaw": 18,
+          "roll": 112,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 24,
+          "roll": -13,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": 18,
+          "roll": 13,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 13,
+        "easing": "OUTCUBIC",
+        "head": {
+          "pitch": -8,
+          "yaw": 4
+        },
+        "torso": {
+          "pitch": -11,
+          "yaw": 8,
+          "roll": -3,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -48,
+          "yaw": -14,
+          "roll": -118,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -44,
+          "yaw": 18,
+          "roll": 116,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 14,
+          "roll": -9,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": 8,
+          "roll": 9,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 19,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": -4,
+          "yaw": -4
+        },
+        "torso": {
+          "pitch": -7,
+          "yaw": -8,
+          "roll": 2,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -72,
+          "yaw": -12,
+          "roll": -74,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -52,
+          "yaw": 18,
+          "roll": 86,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 6,
+          "roll": -6,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": -4,
+          "roll": 7,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": -7,
+          "yaw": -6
+        },
+        "torso": {
+          "pitch": -7,
+          "yaw": -10,
+          "roll": 2,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -98,
+          "yaw": -11,
+          "roll": -50,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -58,
+          "yaw": 22,
+          "roll": 78,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 4,
+          "roll": -5,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": -6,
+          "roll": 6,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 28,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": -8,
+          "yaw": -7
+        },
+        "torso": {
+          "pitch": -8,
+          "yaw": -11,
+          "roll": 2,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -112,
+          "yaw": -10,
+          "roll": -40,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -62,
+          "yaw": 24,
+          "roll": 76,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 4,
+          "roll": -5,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": -6,
+          "roll": 6,
+          "bend": 0
+        }
+      }
+    ]
+  },
+  "author": "RAGE ultimate port",
+  "description": "RAGE Galaxy Impact donor animation, transplanted only for HexHaki's full Galaxy Impact."
+}

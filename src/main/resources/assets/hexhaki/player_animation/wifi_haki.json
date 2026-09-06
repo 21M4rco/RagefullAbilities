@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "name": "wifi_haki",
+  "author": "HexHaki",
+  "description": "WiFi Haki channel: one arm extends and stays projected. Vanilla owns both legs and all ordinary locomotion.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 24,
+    "isLoop": true,
+    "returnTick": 8,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outcubic",
+        "rightArm": { "pitch": -18, "yaw": -2, "roll": 3, "bend": -18 }
+      },
+      {
+        "tick": 5,
+        "easing": "outexpo",
+        "rightArm": { "pitch": -87, "yaw": -4, "roll": 4, "bend": -4 }
+      },
+      {
+        "tick": 12,
+        "easing": "inoutquad",
+        "rightArm": { "pitch": -90, "yaw": -2, "roll": 5, "bend": -2 }
+      },
+      {
+        "tick": 18,
+        "easing": "inoutquad",
+        "rightArm": { "pitch": -86, "yaw": -5, "roll": 3, "bend": -6 }
+      },
+      {
+        "tick": 24,
+        "easing": "inoutquad",
+        "rightArm": { "pitch": -90, "yaw": -2, "roll": 5, "bend": -2 }
+      }
+    ]
+  }
+}

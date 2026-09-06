@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "name": "conqueror_tap_point",
+  "author": "HexHaki V2",
+  "description": "Tapped Conqueror's: a bare forward arm point with the legs, torso and head left at default, so a tap never reads as a committed release.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 32,
+    "stopTick": 32,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "rightArm": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "leftArm": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        }
+      },
+      {
+        "tick": 3,
+        "easing": "outexpo",
+        "rightArm": {
+          "pitch": -96,
+          "yaw": -4,
+          "roll": 3,
+          "bend": -6
+        },
+        "leftArm": {
+          "pitch": 4,
+          "yaw": 2,
+          "roll": -2,
+          "bend": -2
+        }
+      },
+      {
+        "tick": 7,
+        "easing": "outquad",
+        "rightArm": {
+          "pitch": -102,
+          "yaw": -2,
+          "roll": 1,
+          "bend": -2
+        },
+        "leftArm": {
+          "pitch": 5,
+          "yaw": 2,
+          "roll": -2,
+          "bend": -2
+        }
+      },
+      {
+        "tick": 13,
+        "easing": "inoutsine",
+        "rightArm": {
+          "pitch": -99,
+          "yaw": -3,
+          "roll": 2,
+          "bend": -4
+        },
+        "leftArm": {
+          "pitch": 4,
+          "yaw": 2,
+          "roll": -2,
+          "bend": -2
+        }
+      },
+      {
+        "tick": 22,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": -92,
+          "yaw": -4,
+          "roll": 3,
+          "bend": -6
+        },
+        "leftArm": {
+          "pitch": 3,
+          "yaw": 1,
+          "roll": -1,
+          "bend": -1
+        }
+      },
+      {
+        "tick": 32,
+        "easing": "outquad",
+        "rightArm": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "leftArm": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        }
+      }
+    ]
+  }
+}

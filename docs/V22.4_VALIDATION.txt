@@ -1,0 +1,15 @@
+V22.4 VISUAL/AUDIO FIX VALIDATION
+=================================
+PASS: tools/validate_source.py
+PASS: sounds.json parses and includes 3 armament_crackle variants
+PASS: all 3 new crackle OGG assets decode as mono 44.1 kHz, 1.65 s
+PASS: RenderArmEvent replacement path cancels vanilla arm only while Armament is active
+PASS: Advanced Haki (J / ACoC) owns arm flame rendering; Ryuo damage logic remains intact
+PASS: Armament ambient lightning has no head/neck band and motes are constrained below upper chest
+
+Behavior changed in this build:
+- First-person Armament hand is rendered as the coated hand instead of an overlay hidden by vanilla skin.
+- Advanced Haki J: subtly redder black arms + arm-bound flame wisps on both arms.
+- Ryuo: retains damage boost, no longer controls flame visual.
+- Normal Armament: no face/head particles.
+- Armament lightning audio: new realistic crack + thunder body variants.

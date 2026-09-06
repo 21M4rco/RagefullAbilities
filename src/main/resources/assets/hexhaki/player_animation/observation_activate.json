@@ -1,0 +1,252 @@
+{
+  "version": 3,
+  "name": "observation_activate",
+  "author": "HexHaki",
+  "description": "Observation Haki focus: eyes/head lead a measured scan while shoulders and hips settle into an alert, natural stance.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 32,
+    "stopTick": 32,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "body": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "torso": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 7,
+        "easing": "inoutquad",
+        "body": {
+          "x": 0,
+          "y": -0.01,
+          "z": 0,
+          "pitch": 2,
+          "yaw": -5,
+          "roll": -1
+        },
+        "torso": {
+          "pitch": 3,
+          "yaw": -8,
+          "roll": -2,
+          "bend": -3
+        },
+        "head": {
+          "pitch": -5,
+          "yaw": 18,
+          "roll": 1
+        },
+        "rightArm": {
+          "pitch": -8,
+          "yaw": -8,
+          "roll": 10,
+          "bend": -24
+        },
+        "leftArm": {
+          "pitch": -6,
+          "yaw": 7,
+          "roll": -9,
+          "bend": -22
+        },
+        "rightLeg": {
+          "pitch": 7,
+          "yaw": 3,
+          "roll": 2,
+          "bend": 12
+        },
+        "leftLeg": {
+          "pitch": -4,
+          "yaw": -3,
+          "roll": -2,
+          "bend": 8
+        }
+      },
+      {
+        "tick": 14,
+        "easing": "inoutquad",
+        "body": {
+          "x": 0,
+          "y": -0.012,
+          "z": 0,
+          "pitch": 2,
+          "yaw": 6,
+          "roll": 1
+        },
+        "torso": {
+          "pitch": 3,
+          "yaw": 10,
+          "roll": 2,
+          "bend": -3
+        },
+        "head": {
+          "pitch": -4,
+          "yaw": -21,
+          "roll": -1
+        },
+        "rightArm": {
+          "pitch": -7,
+          "yaw": -6,
+          "roll": 9,
+          "bend": -22
+        },
+        "leftArm": {
+          "pitch": -8,
+          "yaw": 8,
+          "roll": -10,
+          "bend": -24
+        },
+        "rightLeg": {
+          "pitch": -4,
+          "yaw": -3,
+          "roll": -2,
+          "bend": 8
+        },
+        "leftLeg": {
+          "pitch": 7,
+          "yaw": 3,
+          "roll": 2,
+          "bend": 12
+        }
+      },
+      {
+        "tick": 22,
+        "easing": "outcubic",
+        "body": {
+          "x": 0,
+          "y": -0.02,
+          "z": 0,
+          "pitch": 4,
+          "yaw": -2,
+          "roll": -1
+        },
+        "torso": {
+          "pitch": 6,
+          "yaw": -4,
+          "roll": -1,
+          "bend": -5
+        },
+        "head": {
+          "pitch": -7,
+          "yaw": 3,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": -13,
+          "yaw": -10,
+          "roll": 14,
+          "bend": -32
+        },
+        "leftArm": {
+          "pitch": -11,
+          "yaw": 10,
+          "roll": -14,
+          "bend": -30
+        },
+        "rightLeg": {
+          "pitch": 10,
+          "yaw": 3,
+          "roll": 3,
+          "bend": 18
+        },
+        "leftLeg": {
+          "pitch": -6,
+          "yaw": -3,
+          "roll": -3,
+          "bend": 13
+        }
+      },
+      {
+        "tick": 32,
+        "easing": "inoutquad",
+        "body": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "torso": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "rightLeg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftLeg": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        }
+      }
+    ]
+  }
+}

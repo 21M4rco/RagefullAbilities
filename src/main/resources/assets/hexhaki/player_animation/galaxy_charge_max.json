@@ -1,0 +1,152 @@
+{
+  "version": 3,
+  "name": "galaxy_charge_max",
+  "author": "HexHaki",
+  "description": "Final power-lock: slightly steeper diagonal dive and tighter right-fist compression. Upper-body-only final-alpha layer; vanilla locomotion owns both legs.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 34,
+    "stopTick": 34,
+    "isLoop": true,
+    "returnTick": 17,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "torso": {
+          "pitch": 20,
+          "yaw": -18,
+          "roll": -7,
+          "bend": -20
+        },
+        "head": {
+          "pitch": -5,
+          "yaw": 10,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": -118,
+          "yaw": -22,
+          "roll": 22,
+          "bend": -96
+        },
+        "leftArm": {
+          "pitch": -1,
+          "yaw": 34,
+          "roll": -20,
+          "bend": -65
+        }
+      },
+      {
+        "tick": 8,
+        "easing": "outcubic",
+        "torso": {
+          "pitch": 24,
+          "yaw": -21,
+          "roll": -9,
+          "bend": -24
+        },
+        "head": {
+          "pitch": -6,
+          "yaw": 12,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": -126,
+          "yaw": -24,
+          "roll": 24,
+          "bend": -104
+        },
+        "leftArm": {
+          "pitch": -6,
+          "yaw": 38,
+          "roll": -22,
+          "bend": -70
+        }
+      },
+      {
+        "tick": 17,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": 21,
+          "yaw": -18,
+          "roll": -7,
+          "bend": -21
+        },
+        "head": {
+          "pitch": -5,
+          "yaw": 10,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": -120,
+          "yaw": -22,
+          "roll": 22,
+          "bend": -98
+        },
+        "leftArm": {
+          "pitch": -2,
+          "yaw": 35,
+          "roll": -20,
+          "bend": -66
+        }
+      },
+      {
+        "tick": 26,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": 25,
+          "yaw": -22,
+          "roll": -9,
+          "bend": -25
+        },
+        "head": {
+          "pitch": -6,
+          "yaw": 12,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": -128,
+          "yaw": -24,
+          "roll": 24,
+          "bend": -106
+        },
+        "leftArm": {
+          "pitch": -7,
+          "yaw": 39,
+          "roll": -22,
+          "bend": -72
+        }
+      },
+      {
+        "tick": 34,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": 21,
+          "yaw": -18,
+          "roll": -7,
+          "bend": -21
+        },
+        "head": {
+          "pitch": -5,
+          "yaw": 10,
+          "roll": -2
+        },
+        "rightArm": {
+          "pitch": -120,
+          "yaw": -22,
+          "roll": 22,
+          "bend": -98
+        },
+        "leftArm": {
+          "pitch": -2,
+          "yaw": 35,
+          "roll": -20,
+          "bend": -66
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "uuid": "cc2fd27b-6576-4d68-9dc2-1a9f7c8ddf03",
+  "name": "galaxy_rage_ready",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 24,
+    "isLoop": true,
+    "returnTick": 0,
+    "nsfw": false,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 30,
+          "yaw": -4,
+          "roll": 0
+        },
+        "torso": {
+          "pitch": 17,
+          "yaw": -8,
+          "roll": 3,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -154,
+          "yaw": -18,
+          "roll": -28,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -38,
+          "yaw": 18,
+          "roll": 72,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 6,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 34,
+          "yaw": -5
+        },
+        "torso": {
+          "pitch": 20,
+          "yaw": -10,
+          "roll": 4,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -160,
+          "yaw": -20,
+          "roll": -31,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -43,
+          "yaw": 20,
+          "roll": 76,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 12,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 28,
+          "yaw": -3
+        },
+        "torso": {
+          "pitch": 15,
+          "yaw": -6,
+          "roll": 2,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -151,
+          "yaw": -16,
+          "roll": -25,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -35,
+          "yaw": 16,
+          "roll": 69,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 18,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 33,
+          "yaw": -5
+        },
+        "torso": {
+          "pitch": 19,
+          "yaw": -9,
+          "roll": 4,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -158,
+          "yaw": -19,
+          "roll": -30,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -41,
+          "yaw": 19,
+          "roll": 75,
+          "bend": 0
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "INOUTSINE",
+        "head": {
+          "pitch": 30,
+          "yaw": -4
+        },
+        "torso": {
+          "pitch": 17,
+          "yaw": -8,
+          "roll": 3,
+          "bend": 0
+        },
+        "rightArm": {
+          "pitch": -154,
+          "yaw": -18,
+          "roll": -28,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": -38,
+          "yaw": 18,
+          "roll": 72,
+          "bend": 0
+        }
+      }
+    ]
+  },
+  "author": "RAGE ultimate port",
+  "description": "RAGE Galaxy Impact donor animation, transplanted only for HexHaki's full Galaxy Impact. Upper-body-only final-alpha layer; vanilla locomotion owns both legs."
+}

@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "name": "haki_leap_charge",
+  "author": "HexHaki",
+  "description": "Haki Leap charge: arms only. Elbows bend slightly outward while vanilla owns body, torso, head and both legs.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 36,
+    "stopTick": 36,
+    "isLoop": true,
+    "returnTick": 12,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "rightArm": {
+          "pitch": 14,
+          "yaw": 9,
+          "roll": 18,
+          "bend": -56
+        },
+        "leftArm": {
+          "pitch": 14,
+          "yaw": -9,
+          "roll": -18,
+          "bend": -56
+        }
+      },
+      {
+        "tick": 12,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": 18,
+          "yaw": 11,
+          "roll": 22,
+          "bend": -62
+        },
+        "leftArm": {
+          "pitch": 18,
+          "yaw": -11,
+          "roll": -22,
+          "bend": -62
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": 16,
+          "yaw": 10,
+          "roll": 20,
+          "bend": -59
+        },
+        "leftArm": {
+          "pitch": 16,
+          "yaw": -10,
+          "roll": -20,
+          "bend": -59
+        }
+      },
+      {
+        "tick": 36,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": 19,
+          "yaw": 12,
+          "roll": 23,
+          "bend": -64
+        },
+        "leftArm": {
+          "pitch": 19,
+          "yaw": -12,
+          "roll": -23,
+          "bend": -64
+        }
+      }
+    ]
+  }
+}

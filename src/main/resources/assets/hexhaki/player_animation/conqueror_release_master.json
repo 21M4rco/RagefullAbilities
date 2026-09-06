@@ -1,0 +1,179 @@
+{
+  "version": 3,
+  "name": "conqueror_release_master",
+  "author": "HexHaki",
+  "description": "Conqueror release: starting from a head-clutch strain pose, the hands peel off the head, the chest squares forward, and both arms whip backward without folding the torso away from the pelvis.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 38,
+    "stopTick": 38,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outquad",
+        "torso": {
+          "pitch": 9,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 14,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": -69,
+          "yaw": -17,
+          "roll": 68,
+          "bend": -68
+        },
+        "leftArm": {
+          "pitch": -69,
+          "yaw": 17,
+          "roll": -68,
+          "bend": -68
+        }
+      },
+      {
+        "tick": 4,
+        "easing": "incubic",
+        "torso": {
+          "pitch": 6,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 8,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": -40,
+          "yaw": -11,
+          "roll": 44,
+          "bend": -38
+        },
+        "leftArm": {
+          "pitch": -40,
+          "yaw": 11,
+          "roll": -44,
+          "bend": -38
+        }
+      },
+      {
+        "tick": 8,
+        "easing": "outexpo",
+        "torso": {
+          "pitch": 1,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 2,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 22,
+          "yaw": 24,
+          "roll": 28,
+          "bend": -10
+        },
+        "leftArm": {
+          "pitch": 22,
+          "yaw": -24,
+          "roll": -28,
+          "bend": -10
+        }
+      },
+      {
+        "tick": 13,
+        "easing": "outback",
+        "torso": {
+          "pitch": -3,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 55,
+          "yaw": 35,
+          "roll": 36,
+          "bend": -6
+        },
+        "leftArm": {
+          "pitch": 55,
+          "yaw": -35,
+          "roll": -36,
+          "bend": -6
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "outcubic",
+        "torso": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 14,
+          "yaw": 10,
+          "roll": 12,
+          "bend": -8
+        },
+        "leftArm": {
+          "pitch": 14,
+          "yaw": -10,
+          "roll": -12,
+          "bend": -8
+        }
+      },
+      {
+        "tick": 38,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "head": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "rightArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        }
+      }
+    ]
+  }
+}

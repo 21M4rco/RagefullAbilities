@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "name": "haki_leap_release",
+  "author": "HexHaki",
+  "description": "Haki Leap release: arms only. Bent elbows stay slightly outside the torso during the forward arc; vanilla owns everything else.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 24,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "outexpo",
+        "rightArm": {
+          "pitch": 20,
+          "yaw": 13,
+          "roll": 24,
+          "bend": -66
+        },
+        "leftArm": {
+          "pitch": 20,
+          "yaw": -13,
+          "roll": -24,
+          "bend": -66
+        }
+      },
+      {
+        "tick": 8,
+        "easing": "outcubic",
+        "rightArm": {
+          "pitch": 22,
+          "yaw": 14,
+          "roll": 26,
+          "bend": -70
+        },
+        "leftArm": {
+          "pitch": 22,
+          "yaw": -14,
+          "roll": -26,
+          "bend": -70
+        }
+      },
+      {
+        "tick": 16,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": 17,
+          "yaw": 10,
+          "roll": 20,
+          "bend": -60
+        },
+        "leftArm": {
+          "pitch": 17,
+          "yaw": -10,
+          "roll": -20,
+          "bend": -60
+        }
+      },
+      {
+        "tick": 24,
+        "easing": "inoutquad",
+        "rightArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        },
+        "leftArm": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0,
+          "bend": 0
+        }
+      }
+    ]
+  }
+}

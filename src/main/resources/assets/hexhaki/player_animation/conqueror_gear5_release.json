@@ -1,0 +1,167 @@
+{
+  "version": 3,
+  "name": "conqueror_gear5_release",
+  "author": "HexHaki V2",
+  "description": "Release out of the charge: the head is pulled back one last time, then snaps forward and settles. Head-only; the rest of the body stays vanilla's.",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 48,
+    "stopTick": 48,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "easeBeforeKeyframe": false,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "inquad",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": -58,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "tick": 4,
+        "easing": "inquad",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": -74,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "tick": 10,
+        "easing": "outexpo",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 28,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "tick": 14,
+        "easing": "inoutsine",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 23.14,
+          "yaw": -2.43,
+          "roll": -1.94
+        }
+      },
+      {
+        "tick": 18,
+        "easing": "inoutsine",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 24.95,
+          "yaw": -1.53,
+          "roll": -1.22
+        }
+      },
+      {
+        "tick": 22,
+        "easing": "inoutsine",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 27.01,
+          "yaw": -0.5,
+          "roll": -0.4
+        }
+      },
+      {
+        "tick": 26,
+        "easing": "inoutsine",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 28.55,
+          "yaw": 0.28,
+          "roll": 0.22
+        }
+      },
+      {
+        "tick": 30,
+        "easing": "inoutsine",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 29.17,
+          "yaw": 0.59,
+          "roll": 0.47
+        }
+      },
+      {
+        "tick": 38,
+        "easing": "inoutquad",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 10,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      {
+        "tick": 48,
+        "easing": "outquad",
+        "torso": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0,
+          "bend": 0.0
+        },
+        "head": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    ]
+  }
+}
